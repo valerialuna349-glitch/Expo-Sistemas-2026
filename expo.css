@@ -1,0 +1,423 @@
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Kantumruy Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  background-color: #F1F1F1 ;
+}
+
+/*Parte1*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #1F1F23;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 35px; 
+  z-index: 1000;
+}
+
+
+.logo-texto {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.logo-texto span {
+  color: #DFFF5A;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 31px; 
+}
+
+.nav a {
+  color: #CFCFD2;
+  text-decoration: none; 
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color:#DFFF5A; 
+}
+
+.btn-nav {
+  background-color: #5740E6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #361EAE; 
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 70px 35px; 
+  background-color: #5E5E67; 
+  gap: 50px; 
+}
+
+.hero-contenido {
+  flex: 1; 
+  max-width: 700px;
+}
+
+.hero-contenido h1 {
+  font-size: 3rem; 
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.hero-contenido p {
+  font-size: 1.2rem;
+  color: #CFCFD2; 
+  line-height: 1.6; 
+  margin-bottom: 30px;
+}
+
+
+.hero-botones {
+  display: flex;
+  gap: 20px; 
+}
+
+
+.btn-primario {
+  background-color: #5740E6;
+  color: #FFFFFF;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primario:hover {
+  background-color: #361EAE; 
+}
+
+
+.btn-secundario {
+  background-color: transparent;
+  color: #F0EFFD;
+  border: 3px solid #F0EFFD; 
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-secundario:hover {
+  border-color: #361EAE;
+  color: #361EAE;
+}
+
+.hero-imagen {
+  flex: 1; 
+  display: flex;
+  justify-content: right;
+}
+
+.hero-imagen img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover; 
+}
+
+/*Parte2*/
+
+
+.proyectos {
+  padding: 30px 35px;
+  background-color: #F1F1F1; 
+  color: #1F1F23; 
+}
+
+.proyectos h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1F1F23;
+}
+
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 24px;
+}
+
+.tarjeta {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.tarjeta .etiqueta {
+  background-color: #DFFF5A; 
+  color: #343E05;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+
+.tarjeta h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1F1F23;
+}
+
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: #5E5E67;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.btn-tarjeta {
+  background-color: #5740E6;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%; 
+  text-align: center;
+  margin-top: auto; 
+  transition: background-color 0.3s ease;
+}
+
+.btn-tarjeta:hover {
+  background-color: #361EAE;
+}
+
+/*Parte3*/
+
+.galeria {
+  padding: 30px 35px 80px 35px ;
+  background-color: #F1F1F1; 
+  color: #1F1F23;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.galeria h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1F1F23;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 150px; 
+  gap: 20px;
+  width: 100%; 
+}
+
+.galeria-item {
+  width: 100%;
+  height: 100%; 
+  border-radius: 8px;
+  overflow: hidden; 
+  margin: 0;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+.galeria-item img:hover {
+  transform: scale(1.03);
+}
+
+.img-1{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.img-2{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.img-3{
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+
+.img-4{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.img-5{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.img-6{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.img-7{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.img-8{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.img-9{
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+/*Parte4*/
+
+.footer {
+  background-color: #1F1F23; 
+  padding: 30px 35px;
+  color: #CFCFD2;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.copyright {
+  font-size: 400;
+  margin: 0;
+}
+
+.redes-sociales {
+  display: flex;
+  list-style: none; 
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociales a {
+  color: #CFCFD2;
+  text-decoration: none;
+  font-size: 400;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #DFFF5A; 
+}
+
+/*VistaTableta*/
+
+@media (max-width: 834px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 35px;
+  }
+  
+  .hero-botones {
+    justify-content: center;
+  }
+  
+  .grid-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
+/*VistaMovil*/
+@media (max-width: 480px) {
+  
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  body {
+    padding-top: 150px; 
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  .nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero, .proyectos, .galeria, .footer {
+    padding: 40px 20px;
+  }
+
+  .grid-tarjetas, .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
